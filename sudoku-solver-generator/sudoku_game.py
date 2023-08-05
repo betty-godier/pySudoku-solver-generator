@@ -1,20 +1,20 @@
 import pygame
 
-def initialize_game():
+def initialize_game(window_caption="Sudoku", icon_file = 'icon.png'):
     # game font
     pygame.font.init()
-    
+
     # initialize a 500x600 pixels window
     screen_width = 500
     screen_height = 600
     screen = pygame.display.set_mode((screen_width, screen_height))
 
-    # set title
-    pygame.display.set_caption("SUDOKU SOLVER USING BACKTRACKING")
+    # Set the window caption at the beginning of the game
+    pygame.display.set_caption(window_caption)
 
     # set icon
-    imgIcon = pygame.image.load('icon.png')
-    pygame.display.set_icon(imgIcon)
+    icon = pygame.image.load(icon_file)
+    pygame.display.set_icon(icon)
 
     dif = 500 / 9
     val = 0
