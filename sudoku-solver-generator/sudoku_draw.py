@@ -7,7 +7,7 @@ def draw_box(screen, pygame, x, y, dif):
         pygame.draw.line(screen, (255, 0, 0), ( (x + i)* dif, y * dif), ((x + i) * dif, y * dif + dif), 7)
 
 # draws the Sudoku grid on the window, including the default values from the grid list
-def draw(default_grid, pygame,  screen, dif, font1):
+def draw(default_grid, pygame, screen, dif, font1):
     for i in range(9):
         for j in range (9):
             if default_grid[i][j]!= 0:
